@@ -1,0 +1,21 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Omni AI Portal',
+  description: 'AI Generated Web Portal',
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <body className="bg-slate-900 text-white min-h-screen">
+        {children}
+      </body>
+    </html>
+  );
+}
+
